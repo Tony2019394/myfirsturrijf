@@ -24,9 +24,8 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew assembleDebug
-    - name: Build and Release Debug APK
-      uses: valley-fordham/action-release-debugapk@0.1
-      env:
-       GITHUB_TOKEN: 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
-       APP_FOLDER: app
-       RELEASE_TITLE: New Build
+    - name: Upload APK
+      uses: actions/upload-artifact@v2.2.3
+      with:
+        name: app
+        path: ./app/build/outputs/apk/debug/app-debug.apk
