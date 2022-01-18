@@ -26,3 +26,7 @@ jobs:
       run: ./gradlew assembleDebug
     - name: Build and Release Debug APK
       uses: valley-fordham/action-release-debugapk@0.1
+      env:
+       GITHUB_TOKEN: ${{ secrets.TOKEN }}
+       APP_FOLDER: app
+       RELEASE_TITLE: New Build
