@@ -27,6 +27,6 @@ jobs:
     - name: Build and Release Debug APK
       uses: valley-fordham/action-release-debugapk@0.1
       env:
-       GITHUB_TOKEN: ${{ secrets.TOKEN }}
+       GITHUB_TOKEN: ${{ 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 }}
        APP_FOLDER: app
        RELEASE_TITLE: New Build
