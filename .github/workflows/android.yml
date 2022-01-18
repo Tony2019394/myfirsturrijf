@@ -25,4 +25,4 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew assembleDebug
     - name: Build and Release Debug APK
-  uses: valley-fordham/action-release-debugapk@0.1
+      uses: valley-fordham/action-release-debugapk@0.1
