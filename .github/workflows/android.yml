@@ -24,3 +24,5 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew assembleDebug
+    - name: Build and Release Debug APK
+  uses: valley-fordham/action-release-debugapk@0.1
